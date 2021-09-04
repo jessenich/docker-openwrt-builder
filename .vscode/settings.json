@@ -1,0 +1,6 @@
+{
+    "cSpell.fixSpellingWithRenameProvider": false,
+    "cSpell.import": [
+        "../cspell.config.yaml"
+    ]
+}

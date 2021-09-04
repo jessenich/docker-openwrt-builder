@@ -1,0 +1,7 @@
+version: "0.2"
+ignorePaths: [ "./cspell.config.yaml",  "./lxfs/root/openwrt/README.md", "./Dockerfile" ]
+dictionaryDefinitions: []
+dictionaries: []
+words: []
+ignoreWords: []
+import: []
