@@ -9,16 +9,17 @@
 ## Compiling OpenWrt for ROCK Pi E
 
 ```bash
-## Skip to 3rd section
+## Skip to 2nd section
 ## Performed by docker build
 git clone --depth 1 [https://github.com/jayanta525/rock-pi-e.git](https://github.com/jayanta525/rock-pi-e.git) openwrt/
 cd openwrt/
 
-## Performed by entrypoint script on docker container start.
+
+## START HERE! 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
-## START HERE! 
+
 ## Start build process within container, select device and required packages here
 make menuconfig
 
