@@ -9,11 +9,10 @@ registry_username= ;
 registry_password= ;
 registry_password_stdin= ;
 ghcr_library="jessenich";
-ghcr_repository="mssql-server";
+ghcr_repository="openwrt-image-builder";
 library="jessenich91";
-repository="mssql-server";
+repository="openwrt-image-builder";
 builder="default";
-push=false
 
 variant="buster";
 
@@ -82,6 +81,7 @@ build() {
         -t "ghcr.io/${ghcr_library}/${ghcr_repository}:${tag2}" \
         -t "ghcr.io/${ghcr_library}/${ghcr_repository}:${tag3}" \
         --build-arg "VARIANT=${variant}" \
+        --no-cache \
         --pull \
         --push \
         "${repository_root}"
@@ -159,7 +159,7 @@ main() {
                 shift 2;
             ;;
 
-            -b | -builder)
+            -b | --builder)
                 builder="$2";
                 shift 2;
             ;;
