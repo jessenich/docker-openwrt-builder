@@ -16,6 +16,7 @@ env:
   GHCR_URI: ghcr.io
   LABELS: |
     maintainer=Jesse N. <jesse@keplerdev.com>
+    org.opencontainers.image.source=https://github.com/jessenich/docker-openwrt-builder
 
 jobs:
   build-docker-image:
