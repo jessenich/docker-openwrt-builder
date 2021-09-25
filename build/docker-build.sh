@@ -86,9 +86,13 @@ build() {
         --push \
         "${repository_root}"
 
-        echo "Build finished, images oushed to: " && \
-            echo "    docker.io/$library/$repository" && \
-            echo "    ghcr.io/$ghcr_library/$ghcr_repository"
+        echo "Build finished, images pushed to: " && \
+            echo "    docker.io/$library/$repository:${tag1}" && \
+            echo "    docker.io/$library/$repository:${tag2}" && \
+            echo "    docker.io/$library/$repository:${tag3}" && \
+            echo "    ghcr.io/$ghcr_library/$ghcr_repository:${tag1}" && \
+            echo "    ghcr.io/$ghcr_library/$ghcr_repository:${tag2}" && \
+            echo "    ghcr.io/$ghcr_library/$ghcr_repository:${tag3}"
 }
 
 run() {
