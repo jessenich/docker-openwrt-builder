@@ -4,7 +4,7 @@
 
 [Rock PI E Wiki Link (https://wiki.radxa.com/RockpiE/OpenWRT#Compiling_OpenWrt_for_ROCK_Pi_E)](https://wiki.radxa.com/RockpiE/OpenWRT#Compiling_OpenWrt_for_ROCK_Pi_E)
 
-[GitHub Source](https://github.com/jayanta525/rk3328-rock-pi-e)
+[GitHub Source (jayanta525/rk3328-rock-pi-e)](https://github.com/jayanta525/rk3328-rock-pi-e)
 
 ## Compiling OpenWrt for ROCK Pi E
 
@@ -18,7 +18,6 @@ cd openwrt/
 ## START HERE! 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
-
 
 ## Start build process within container, select device and required packages here
 make menuconfig
